@@ -33,7 +33,7 @@ jobs:
       - if: runner.os != 'Windows'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.4.10"
+          ruby-version: "4.0.5"
       # typhoeus loads libcurl via Ethon/FFI at runtime; it is present on the
       # ubuntu/macos runners. Install is best-effort — the oracle skips if absent.
       - if: runner.os != 'Windows'
